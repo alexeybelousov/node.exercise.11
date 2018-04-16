@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat</title>
+  </head>
+  <body>
+    <ul>
+      <% rooms.forEach(function(room) { %>
+          <li><a href="/rooms/<%= room.name %>"><%= room.name %></li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
