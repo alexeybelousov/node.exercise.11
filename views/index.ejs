@@ -6,7 +6,7 @@
   <body>
     <ul>
       <% rooms.forEach(function(room) { %>
-          <li><a href="/rooms/<%= room.name %>"><%= room.name %></li>
+          <li><a href="/rooms/?room=<%= room.name %>"><%= room.name %></li>
       <% }); %>
     </ul>
   </body>
